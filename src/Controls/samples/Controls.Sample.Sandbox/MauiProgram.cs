@@ -1,4 +1,6 @@
-﻿namespace Maui.Controls.Sample;
+﻿using Plugin.Maui.BottomSheet;
+
+namespace Maui.Controls.Sample;
 
 public static class MauiProgram
 {
@@ -7,6 +9,13 @@ public static class MauiProgram
 			.CreateBuilder()
 #if __ANDROID__ || __IOS__
 			.UseMauiMaps()
+#endif
+#if IOS
+			.ConfigureMauiHandlers(x =>
+			{
+				x.AddHandler<BottomSheet, Plugin.Maui.BottomSheet.Handlers.BottomSheetHandler>();
+				x.AddHandler<CloseButton, Plugin.Maui.BottomSheet.Handlers.CloseButtonHandler>();
+			})
 #endif
 			.UseMauiApp<App>()
 			.ConfigureFonts(fonts =>

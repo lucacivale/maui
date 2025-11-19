@@ -51,6 +51,23 @@
     <MauiAsset Include="Resources\Raw\**" LogicalName="%(RecursiveDir)%(Filename)%(Extension)" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="AsyncAwaitBestPractices" Version="9.0.0" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\BottomSheet\src\Plugin.BottomSheet\Plugin.BottomSheet.csproj" />
+  </ItemGroup>
+
+  <ItemGroup Condition="$(TargetFramework.EndsWith('ios')) or $(TargetFramework.EndsWith('maccatalyst'))">
+    <ProjectReference Include="..\..\..\..\..\BottomSheet\src\Plugin.BottomSheet.IOSMacCatalyst\Plugin.BottomSheet.IOSMacCatalyst.csproj" />
+  </ItemGroup>
+
+
+  <ItemGroup Condition="$(TargetFramework.EndsWith('android'))">
+    <ProjectReference Include="..\..\..\..\..\BottomSheet\src\Plugin.BottomSheet.Android\Plugin.BottomSheet.Android.csproj" />
+  </ItemGroup>
+
   <Import Project="$(MauiSrcDirectory)Maui.InTree.props" Condition=" '$(UseMaui)' != 'true' " />
 
 </Project>

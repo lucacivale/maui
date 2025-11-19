@@ -1,6 +1,6 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.0.31410.414
+# Visual Studio Version 18
+VisualStudioVersion = 18.0.11205.157 d18.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core", "src\Core\src\Core.csproj", "{95BA42B5-B00E-4986-B9B5-517140378452}"
 EndProject
@@ -246,6 +246,12 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Maui.Controls.Sample.Embedding", "src\Controls\samples\Controls.Sample.Embedding\Maui.Controls.Sample.Embedding.csproj", "{4ADCBA87-30DB-44F5-85E9-94A4F4132FD9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Controls.ManualTests", "src\Controls\tests\ManualTests\Controls.ManualTests.csproj", "{E2BFD1F1-07A8-8DBE-3661-894D0FE37D9C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plugin.BottomSheet", "..\BottomSheet\src\Plugin.BottomSheet\Plugin.BottomSheet.csproj", "{DA110955-7831-6A5A-43E2-0850BC7DF934}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plugin.BottomSheet.Android", "..\BottomSheet\src\Plugin.BottomSheet.Android\Plugin.BottomSheet.Android.csproj", "{177FF3E8-D030-E477-3658-882B8247DC03}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plugin.BottomSheet.IOSMacCatalyst", "..\BottomSheet\src\Plugin.BottomSheet.IOSMacCatalyst\Plugin.BottomSheet.IOSMacCatalyst.csproj", "{86B09BE6-45CF-D9E6-57DE-8317C18C11AF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -636,6 +642,18 @@ Global
 		{E2BFD1F1-07A8-8DBE-3661-894D0FE37D9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E2BFD1F1-07A8-8DBE-3661-894D0FE37D9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E2BFD1F1-07A8-8DBE-3661-894D0FE37D9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA110955-7831-6A5A-43E2-0850BC7DF934}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA110955-7831-6A5A-43E2-0850BC7DF934}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA110955-7831-6A5A-43E2-0850BC7DF934}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA110955-7831-6A5A-43E2-0850BC7DF934}.Release|Any CPU.Build.0 = Release|Any CPU
+		{177FF3E8-D030-E477-3658-882B8247DC03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{177FF3E8-D030-E477-3658-882B8247DC03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{177FF3E8-D030-E477-3658-882B8247DC03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{177FF3E8-D030-E477-3658-882B8247DC03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86B09BE6-45CF-D9E6-57DE-8317C18C11AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86B09BE6-45CF-D9E6-57DE-8317C18C11AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86B09BE6-45CF-D9E6-57DE-8317C18C11AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86B09BE6-45CF-D9E6-57DE-8317C18C11AF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -750,6 +768,9 @@ Global
 		{F1BC506B-3A9E-4779-994E-339AFB21C9B9} = {7AC28763-9C68-4BF9-A1BA-25CBFFD2D15C}
 		{4ADCBA87-30DB-44F5-85E9-94A4F4132FD9} = {E1082E26-D700-4127-9329-66D673FD2D55}
 		{E2BFD1F1-07A8-8DBE-3661-894D0FE37D9C} = {25D0D27A-C5FE-443D-8B65-D6C987F4A80E}
+		{DA110955-7831-6A5A-43E2-0850BC7DF934} = {E1082E26-D700-4127-9329-66D673FD2D55}
+		{177FF3E8-D030-E477-3658-882B8247DC03} = {E1082E26-D700-4127-9329-66D673FD2D55}
+		{86B09BE6-45CF-D9E6-57DE-8317C18C11AF} = {E1082E26-D700-4127-9329-66D673FD2D55}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0B8ABEAD-D2B5-4370-A187-62B5ABE4EE50}
